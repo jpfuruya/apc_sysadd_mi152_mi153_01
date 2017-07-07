@@ -1,1 +1,1 @@
-jcborlongan@student.apc.edu
+jcborlongan@student.apc.edu.ph
