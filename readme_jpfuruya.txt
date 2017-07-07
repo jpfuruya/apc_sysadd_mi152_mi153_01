@@ -1,1 +1,1 @@
-jpfuruya@student.apc.edu
+John Rafael Furuya
