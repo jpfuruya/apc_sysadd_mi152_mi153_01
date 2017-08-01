@@ -1,0 +1,13 @@
+CREATE TABLE employee(employee_ID INT PRIMARY KEY, employee_name VARCHAR(40) NOT NULL, employee_age INT(2) NOT NULL, employee_address VARCHAR(45) NOT NULL);
+
+CREATE TABLE department(department_code INT PRIMARY KEY, department_name VARCHAR(40) NOT NULL);
+
+CREATE TABLE position(position_code INT PRIMARY KEY, pos_details VARCHAR(40) NOT NULL);
+
+CREATE TABLE initial_ticket(initial_ticket_no INT PRIMARY KEY, subject VARCHAR(40) NOT NULL,status VARCHAR(40) NOT NULL, priority VARCHAR(40) NOT NULL, requester_name VARCHAR(40) NOT NULL, created_time DATETIME NOT NULL);
+
+CREATE TABLE ticket_type(type_ID INT PRIMARY KEY, type_name VARCHAR(40) NOT NULL);
+
+CREATE TABLE finalized_ticket(finalized_ticket_no INT PRIMARY KEY, closed_time DATETIME NOT NULL);
+
+CREATE TABLE room(room_no INT PRIMARY KEY, room_details VARCHAR(40) NOT NULL);
