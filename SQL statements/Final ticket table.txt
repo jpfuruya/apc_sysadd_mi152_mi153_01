@@ -1,0 +1,6 @@
+CREATE TABLE FinalizedTicket
+(fin_ticketid INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ini_limit time Not NULL,
+emp_id Integer Not Null, 
+ini_ticketid Integer Not Null);
+
