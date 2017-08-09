@@ -1,0 +1,1 @@
+CREATE TABLE room(room_no INT PRIMARY KEY, room_details VARCHAR(40) NOT NULL);
