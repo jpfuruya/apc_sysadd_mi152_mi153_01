@@ -1,7 +1,0 @@
-CREATE TABLE Employee(
-emp_id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-emp_name VARCHAR(45) Not NULL,
-pos_code Integer Not Null, 
-ini_ticketid Integer Not Null
-);
-
