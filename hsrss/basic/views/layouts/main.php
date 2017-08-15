@@ -45,6 +45,8 @@ AppAsset::register($this);
             ['label' => 'Initial Ticket', 'url' => ['/initialticket/index']],
             ['label' => 'Position', 'url' => ['/position/index']],
             ['label' => 'Room', 'url' => ['/room/index']],
+            ['label' => 'Ticket Type', 'url' => ['/tickettype/index']],
+            
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
