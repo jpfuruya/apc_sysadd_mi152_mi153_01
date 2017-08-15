@@ -30,20 +30,11 @@ use app\models\Tickettype;
     ['prompt'=>'Select Information'] 
     ) ?>
 
-    <?= $form->field($model, 'receptionist')->dropDownList(
-    ArrayHelper::map(Employee::find()->all(),'id','emp_name')    , 
-    ['prompt'=>'Select Information'] 
 
-
-    )
+    <?= $form->field($model, 'receptionist')->textInput()
      ?>
 
-    <?= $form->field($model, 'ticket_type_id')->dropDownList(
-    ArrayHelper::map(Tickettype::find()->all(),'id','type_name')    , 
-    ['prompt'=>'Select Information'] 
-
-
-    ) ?>
+    <?= $form->field($model, 'ticket_type_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
