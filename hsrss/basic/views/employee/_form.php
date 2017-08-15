@@ -14,7 +14,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'emp_name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'pos_id')->textInput() ?>
+	<?= $form->field($model, 'pos_id')->dropDownList(
+    ArrayHelper::map(Position::find()->all(),'id','pos_des')    , 
+    ['prompt'=>'Select Information'] 
+    ) ?>
 
     <?= $form->field($model, 'dept_id')->textInput() ?>
 
