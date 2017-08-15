@@ -37,7 +37,12 @@ use app\models\Tickettype;
      ?>
 
 
-    <?= $form->field($model, 'ticket_type_id')->textInput() ?>
+    <?= $form->field($model, 'ticket_type_id')->dropDownList(
+    ArrayHelper::map(Tickettype::find()->all(),'id','type_name')    , 
+    ['prompt'=>'Select Information'] 
+
+
+    ) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
