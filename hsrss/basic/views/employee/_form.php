@@ -19,7 +19,11 @@ use yii\widgets\ActiveForm;
     ['prompt'=>'Select Information'] 
     ) ?>
 
-    <?= $form->field($model, 'dept_id')->textInput() ?>
+    <?= $form->field($model, 'dept_id')->dropDownList(
+    ArrayHelper::map(Department::find()->all(),'id','dept_name')    , 
+    ['prompt'=>'Select Information'] 
+    ) ?>
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
