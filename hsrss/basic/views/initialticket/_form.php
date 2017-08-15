@@ -30,9 +30,12 @@ use app\models\Tickettype;
     ['prompt'=>'Select Information'] 
     ) ?>
 
-
-    <?= $form->field($model, 'receptionist')->textInput()
+    <?= $form->field($model, 'receptionist')->dropDownList(
+    ArrayHelper::map(Employee::find()->all(),'id','emp_name')    , 
+    ['prompt'=>'Select Information'] 
+    )
      ?>
+
 
     <?= $form->field($model, 'ticket_type_id')->textInput() ?>
 
