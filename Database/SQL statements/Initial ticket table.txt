@@ -1,9 +1,0 @@
-CREATE TABLE InitialTicket
-(ini_ticketid INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-ini_subj VARCHAR(60) NOT NULL,
-ini_status VARCHAR(60) NOT NULL,
-ini_priority VARCHAR(60) NOT NULL,
-ini_date datetime NOT NULL,
-ini_limit time Not NULL,
-type_id Integer Not Null, 
-room_no Integer Not Null);
