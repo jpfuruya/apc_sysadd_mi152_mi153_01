@@ -1,4 +1,0 @@
-CREATE TABLE `position` (
-  `pos_id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `pos_des` varchar(45) NOT NULL
-)
